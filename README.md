@@ -1,2 +1,3 @@
-# DATA-4380-Project-I
-In this project I have used deep learning techniques to predict the crypto currency prices in the future. I have used deep learning techniques to predict the prices.
+# Crypto Currency forecasting using LSTM model
+In this project I have predicted the price of one cryptocurrency using the datasets of 4 or more cryptocurrencies using LSTM model.
+
