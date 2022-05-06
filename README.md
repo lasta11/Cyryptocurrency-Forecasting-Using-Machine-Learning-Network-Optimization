@@ -27,5 +27,52 @@ As any good investor it is important to know regarding the high prices, low pric
 
 Correlation:
 https://github.com/lasta11/DATA-4380-Project-I/blob/main/Example_images/Correlation.png
-* Problem Formulation:
 
+* Problem Formulation:
+  * Crypto Forecast LSTM model:
+  * Input: Timeseries data of prices of all four currencies
+  * Output: Predicted price frame
+  * Adam optimizer used
+
+* Training
+   * the model was trained for 60 epochs taking about 5 minutes.
+   * Training model is shown under "modules" of the notebook.
+ 
+ * Results:
+ https://github.com/lasta11/DATA-4380-Project-I/blob/main/Example_images/Prediction.png
+ 
+ # Conclusions:
+  * From the loses, the model demonstrates that the predicted price of the crypto currency tend to match the actual price of the coins on the timeseries data. However, the predicted price have Test MAE: 2064.500914. The volume of the price change over the day can be used to get close predicted price of the currency.
+  
+ # Future Work:
+ * Continue to work on using volume and other factors of price change to keep in model for more acccurate predictions.
+ * Modify the model by splitting the data between 1-2 week timeframe and observe the predicted data over small number of time.
+
+# How to reproduce results
+
+* modules
+   * prepData.py : Function to collect data and modify to make single datasets with necessary columns of all dataframes
+   * dataVisualize.py:Function to visualize price change over time periods
+   * Correlation.py : Function helping to see if the cryptocurrencies selected have correlation
+   * splitData.py : Function to split data into test and train
+   * scaledData.py : Function to normalize the data and transform test and train datasets
+   * Trainsets.py : Function to build the model
+   * TrainModel.py : Function to train the model
+   * Plotgraph.py : Plot the price difference of predicted prive Vs. Actual price
+
+
+*main.ipynb 
+  * Consists of:
+      * Background
+      * Motivation 
+      * Importing the libraries
+      * Data Collection
+      * Data Representation / Correlation Analysis
+      * Loading and scaling data
+      * Building model
+      * Training model
+      * Result Plots
+      * Loss evaluation
+
+# Software Setup
+* Packages used in notebook: pandas, matplotlin, numpy, tensorflow, sklearn, seaborn, keras, datetime
