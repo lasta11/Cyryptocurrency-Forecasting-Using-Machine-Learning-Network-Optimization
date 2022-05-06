@@ -19,7 +19,13 @@ As any good investor it is important to know regarding the high prices, low pric
    * For this project the closing price of all the cryptocurrencies have been collected to make a new dataframe with same date. Therefore, while collecting the datasets for different cryptocurrencies having same start and end date is necessary for further steps.
 
 * Data Visualization:
-   * 
+   * In this project the price difference over the years and how each of them are related to each other. The crypto currencies have high correlation values.
 
+![Data Visualization]
+
+(https://github.com/lasta11/DATA-4380-Project-I/blob/main/Example_images/coins.png)
+
+Correlation:
+https://github.com/lasta11/DATA-4380-Project-I/blob/main/Example_images/Correlation.png
 * Problem Formulation:
 
